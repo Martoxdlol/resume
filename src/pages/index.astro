@@ -5,6 +5,7 @@ import Section from "../components/Section.astro";
 import Link from "../components/Link.astro";
 import Subtitle from "../components/Subtitle.astro";
 import Semibold from "../components/Semibold.astro";
+import PDFButton from "../components/PDFButton.astro";
 ---
 
 <Layout title="Tomás Cichero">
@@ -21,6 +22,7 @@ import Semibold from "../components/Semibold.astro";
     </div>
   </Title>
   <main>
+    <PDFButton />
     <Section title="Portfolio">
       <p>
         Projects and other things<Link href="https://github.com/martoxdlol">
@@ -30,7 +32,7 @@ import Semibold from "../components/Semibold.astro";
     </Section>
     <Section title="Work experience">
       <Subtitle>
-        <Semibold>Ford Argentina</Semibold> - Full IT System Admin (2+ years, current)
+        <Semibold>Ford Argentina</Semibold> - Full IT System Admin (march 2021 - present)
       </Subtitle>
       <p>Responsibilities</p>
       <ul>
@@ -40,7 +42,7 @@ import Semibold from "../components/Semibold.astro";
         <li>Manage Linux server with dockerized services.</li>
       </ul>
       <Subtitle>
-        <Semibold>I AN TECH</Semibold> - Freelance Developer (a few months)
+        <Semibold>I AN TECH</Semibold> - Freelance Developer (june 2023 - present)
       </Subtitle>
       Design and build web software solutions for clients.
     </Section>
@@ -133,7 +135,7 @@ import Semibold from "../components/Semibold.astro";
 
 <style>
   main {
-    max-width: 700px;
+    max-width: 730px;
     margin: auto;
     padding: 20px;
   }
