@@ -35,11 +35,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Page to PDF
-        uses: fifsky/html-to-pdf-action@master
+        uses: ferdinandkeller/html-to-pdf-action@v1
         with:
-          htmlFile: ./dist/index.html
-          outputFile: ./dist/resume.pdf
-          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+          source-path: './dist'
+          destination-path: './dist/resume.pdf'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
