@@ -4,4 +4,4 @@ This is my resume, written in HTML with Astro. It's a static site, so you can ho
 
 ## Release
 
-See releases for the pdf version.
+[resume.pdf](https://martoxdlol.github.io/resume/resume.pdf)
