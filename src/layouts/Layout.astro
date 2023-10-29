@@ -20,6 +20,17 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+  @font-face {
+    font-family: "Segoe UI";
+    src: url("/resume/Segoe UI.ttf");
+  }
+
+  @font-face {
+    font-family: "Segoe UI";
+    src: url("/resume/Segoe UI Semibold.ttf");
+    font-weight: bold;
+  }
+
   :root {
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
@@ -30,11 +41,7 @@ const { title } = Astro.props;
     );
   }
   html {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI";
     background-color: #f6f6f6;
-  }
-  code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 </style>
