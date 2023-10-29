@@ -37,8 +37,8 @@ jobs:
       - name: Page to PDF
         uses: markwilson/html2pdf@v1.0
         with:
-          htmlPath: './dist/index.html'
-          pdfName: './dist/resume.pdf'
+          htmlPath: 'dist/index.html'
+          pdfName: 'resume'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
