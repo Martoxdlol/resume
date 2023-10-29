@@ -35,10 +35,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Page to PDF
-        uses: ferdinandkeller/html-to-pdf-action@v1
+        uses: markwilson/html2pdf@v1.0
         with:
-          source-path: './dist'
-          destination-path: './dist/resume.pdf'
+          htmlPath: './dist/index.html'
+          pdfName: './dist/resume.pdf'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
