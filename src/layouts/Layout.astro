@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 export interface Props {
   title: string;
 }
@@ -22,12 +23,12 @@ const { title } = Astro.props;
 <style is:global>
   @font-face {
     font-family: "Segoe UI";
-    src: url("/resume/Segoe UI.ttf");
+    src: url("../assets/Segoe UI.ttf");
   }
 
   @font-face {
     font-family: "Segoe UI";
-    src: url("/resume/Segoe UI Semibold.ttf");
+    src: url("../assets/Segoe UI Semibold.ttf");
     font-weight: bold;
   }
 

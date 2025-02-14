@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer'
-import path from 'path'
+import path from 'node:path'
 import express from 'express'
 
 const browser = await puppeteer.launch({ headless: "new" });
