@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npm run pdf",
-    "preview": "astro preview",
+    "build": "pnpm dlx puppeteer browsers install chrome && astro build && pnpm run pdf",
+    "peview": "astro preview",
     "astro": "astro",
     "pdf": "node ./src/scripts/page-to-pdf.js"
   },
