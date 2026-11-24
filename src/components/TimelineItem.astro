@@ -1,0 +1,27 @@
+---
+import Subtitle from "./Subtitle.astro";
+import Semibold from "./Semibold.astro";
+
+export interface Props {
+  name: string;
+  role?: string;
+  date: string;
+  current?: boolean;
+}
+
+const { name, role, date, current } = Astro.props;
+---
+
+<div class="group relative pr-6 pb-2 last:pb-0">
+  <span class="absolute right-[5.5px] top-4 -bottom-1 border-l border-stone-300 group-last:hidden"></span>
+  <span
+    class:list={[
+      "absolute right-0 top-1 size-3 rounded-full",
+      current ? "border-[6px] border-stone-500" : "border-2 border-stone-400",
+    ]}
+  ></span>
+  <Subtitle date={date}>
+    <Semibold>{name}</Semibold>{role && ` · ${role}`}
+  </Subtitle>
+  <slot />
+</div>

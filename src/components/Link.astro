@@ -9,6 +9,4 @@ export interface Props {
 const { className, href, target, rel } = Astro.props;
 ---
 
-<a class={"text-blue-500 hover:underline " + className} href={href} rel={rel} target={target}>
-  <slot />
-</a>
+<a class={"text-blue-500 hover:underline " + className} href={href} rel={rel} target={target}><slot /></a>

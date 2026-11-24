@@ -1,1 +1,12 @@
-<h2 class="text-lg py-1"><slot/></h2>
+---
+export interface Props {
+  date?: string;
+}
+
+const { date } = Astro.props;
+---
+
+<h3 class="flex justify-between items-baseline gap-4 text-sm mt-2.5 first-of-type:mt-0">
+  <span><slot /></span>
+  {date && <span class="shrink-0 text-xs text-stone-500">{date}</span>}
+</h3>
